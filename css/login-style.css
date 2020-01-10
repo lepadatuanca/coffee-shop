@@ -1,0 +1,186 @@
+
+form {
+	padding-top: 3vw;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+input[type=submit] {
+  width: 45%;
+  background-color: #7a5c2d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+input[type=reset] {
+  width: 45%;
+  background-color: #7a5c2d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+input [type=checkbox] {
+	float:left;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #ffffff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #7a5c2d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #7a5c2d;
+  cursor: pointer;
+}
+
+span{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+label {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+input[type=submit]:hover {
+  color: #cfa25b;
+}
+
+.social-media {
+	text-align: center;
+	height: 50px;
+	margin-top: 10%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+	background: #ff6600;
+	color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+	input[type=submit] {
+		width: 40%;
+	}
+	input[type=reset] {
+		width: 40%;
+	}
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+	display: none;
+	background: #f1f1f1;
+	color: #000;
+	position: relative;
+	padding: 20px;
+	margin-top: 10px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+#message p {
+	font-family: 'Noto Sans JP', sans-serif;
+	padding: 0px 30px;
+	font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+/*
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}
+*/
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+

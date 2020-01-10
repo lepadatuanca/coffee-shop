@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soft Hugs</title>
+	<link rel = "shortcut icon"
+		type = "image/png"
+		href = "images/clipart1845407.png" />
+	<link rel="stylesheet" href="css/general-style.css">
+	<link rel="stylesheet" href="css/login-style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<h1>Cafeneaua Soft Hugs</h1>
+	<h2>Coffee - A liquid hug for your brain</h2>
+	<div class = "navbar">
+	<ul>
+		<div class = "navbar-elem"><li><a href="despre_noi.html">About Us</a></li></div>
+		<div class = "navbar-elem dropdown"><button class = "dropbtn"><li><a href="meniu.html">Menu</a></li></button>
+			<div class = "dropdown-content">
+				<a href="meniu.html#classics">Your classic coffee</a>
+				<a href="meniu.html#specialty">Specialty drinks</a>
+				<a href="meniu.html#decaff">Relaxing without caffeine</a>
+			</div>
+		</div>
+		<div class = "navbar-elem"><li><a href="oferte_speciale.html">Special Offers</a></li></div>
+		<div class = "navbar-elem"><li><a href="contact.html">Contact</a></li></div>
+		<div class = "navbar-elem right-elem"><li><a href="login.html">Login</a></li></div>
+		<div class = "navbar-elem right-elem"><li><a href="signup.html">Sign Up</a></li></div>
+	</ul>
+	</div>
+	<form name="signUpForm" onsubmit="return(validate());">
+		<label for="email">E-mail</label>
+		<input type="email" id="email" name="email" placeholder="Your e-mail address...">
+		<label for="user">Username</label>
+		<input type="text" id="user" name="user" placeholder="Your username...">
+		<label for="pass">Password</label>
+		<input type="password" id="pass" name="pass" onfocus="return(focuss());" onkeyup="return(validd());" onblur="return(blurry());"  placeholder="Your password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+		
+		<div id="message">
+		<h3>Password must contain the following:</h3>
+		<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+		<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+		<p id="number" class="invalid">A <b>number</b></p>
+		<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+		</div>
+		
+		<input type="radio" id="subscribe" name="subscribe"><span> I want to subscribe to the newsletter.</span><br>
+		<input type="radio" id="subscribe2" name="subscribe2"><span> I DO NOT want to subscribe to the newsletter.</span><br><br>
+		<label for="select">Do you prefer to receive notifications by e-mail: </label>
+		<select>
+		<option value="daily">Daily</option>
+		<option value="weekly">Weekly</option>
+		<option value="monthly">Monthly</option>
+		</select>
+		<input type="checkbox" id="datap" name="datap"><span>I agree with my data being processed.</span><br><br>
+		<label for="opinion">What's your opinion of the coffee shop at the moment? (Left=Bad, Right=Good)</label>
+		<input type="range" name="opinion" min="0" max="10" class="slider" id="myRange">
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</form>
+	<div class="social-media">
+		<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+		<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+	</div>
+	<script src="js/signup.js"></script>
+</body>
+</html>
