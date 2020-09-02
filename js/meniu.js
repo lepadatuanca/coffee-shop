@@ -1,6 +1,6 @@
 const list = document.getElementById('list');
 
-
+/*
 function getCoffee() {
 
       fetch('http://localhost:3000/coffee')
@@ -32,6 +32,7 @@ function appendToDOM(coffee) {
         list.appendChild(fig);
     }
 }
+*/
 
 var grade = ["How intense?"];
 var star = ["*"];
